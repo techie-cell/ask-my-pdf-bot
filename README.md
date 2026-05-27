@@ -79,109 +79,6 @@ ask-my-pdf-bot/
 
 ---
 
-## 🚀 Quick Start (Windows 10)
-
-### Option A — Automated (Recommended for beginners)
-
-1. Double-click **`start_project.bat`**
-2. Follow the prompts
-3. Add your Gemini API key when asked
-4. Done! Browser opens automatically.
-
----
-
-### Option B — Manual Setup
-
-#### Step 1: Install Python 3.11
-
-Download from: https://www.python.org/downloads/
-
-> ⚠️ During installation, check **"Add Python to PATH"**
-
-Verify:
-```cmd
-python --version
-# Should show: Python 3.11.x
-```
-
-#### Step 2: Clone / Download the project
-
-```cmd
-cd C:\Users\YourName\Projects
-REM Extract the downloaded zip here
-cd ask-my-pdf-bot
-```
-
-#### Step 3: Create virtual environment
-
-```cmd
-python -m venv venv
-venv\Scripts\activate
-```
-
-> You should see `(venv)` in your terminal prompt.
-
-#### Step 4: Install PyTorch CPU (do this FIRST)
-
-```cmd
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
-```
-
-> This installs the CPU-only version of PyTorch (~300MB vs 2GB for GPU version).
-
-#### Step 5: Install all dependencies
-
-```cmd
-pip install -r requirements.txt
-```
-
-> This takes 3-7 minutes. Go make a coffee ☕
-
-#### Step 6: Configure environment
-
-```cmd
-copy .env.example .env
-notepad .env
-```
-
-Edit `.env` and add your Gemini API key:
-```
-GEMINI_API_KEY=your_actual_key_here
-```
-
-Get a free key at: https://aistudio.google.com/app/apikey
-
-#### Step 7: Generate sample PDFs (optional)
-
-```cmd
-python data\create_sample_pdfs.py
-```
-
-#### Step 8: Start the Backend
-
-Open **Terminal 1** in VS Code (`Ctrl+\``):
-```cmd
-venv\Scripts\activate
-python backend\main.py
-```
-
-You should see:
-```
-INFO | Ask My PDF Bot - Starting up
-INFO | API Docs : http://localhost:8000/docs
-```
-
-#### Step 9: Start the Frontend
-
-Open **Terminal 2** in VS Code:
-```cmd
-venv\Scripts\activate
-streamlit run frontend\app.py
-```
-
-Browser opens at: **http://localhost:8501** 🎉
-
----
 
 ## 🎮 How to Use
 
@@ -191,20 +88,6 @@ Browser opens at: **http://localhost:8501** 🎉
 4. **View sources** — Each answer shows which PDF and page it came from
 5. **Follow-up** — The bot remembers your conversation
 
-### Example Questions
-
-After uploading `sample_contract.pdf`:
-- *"What is the license fee?"*
-- *"Who are the parties in this agreement?"*
-- *"What happens if either party wants to terminate?"*
-- *"What is the governing law?"*
-
-After uploading `sample_policy.pdf`:
-- *"What are the remote work hours?"*
-- *"What equipment does the company provide?"*
-- *"What is the monthly internet stipend?"*
-
----
 
 ## ⚙️ Configuration (`.env` file)
 
@@ -339,19 +222,7 @@ venv\Scripts\activate
 
 ---
 
-## 💾 RAM Usage Guide
 
-| Component | RAM Usage |
-|-----------|-----------|
-| FastAPI Backend | ~150 MB |
-| Embedding Model (MiniLM) | ~90 MB |
-| FAISS Index (100 pages) | ~50 MB |
-| Streamlit Frontend | ~200 MB |
-| **Total** | **~490 MB** |
-
-> Well within the 4-5GB target for 8GB RAM systems.
-
----
 
 ## 🔒 Security Notes
 
