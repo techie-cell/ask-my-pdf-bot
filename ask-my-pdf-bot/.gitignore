@@ -1,0 +1,49 @@
+# ── Python ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environment ───────────────────────
+venv/
+env/
+ENV/
+.venv/
+
+# ── Environment Variables (NEVER commit) ──────
+.env
+
+# ── IDE / Editor ──────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Project Data ──────────────────────────────
+uploads/
+logs/
+data/faiss_index.bin
+data/chunks_metadata.pkl
+
+# ── OS Files ──────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Pytest ────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── HuggingFace Cache ─────────────────────────
+# (too large to commit — re-downloads automatically)
+.cache/
+
+# ── Streamlit ─────────────────────────────────
+.streamlit/secrets.toml

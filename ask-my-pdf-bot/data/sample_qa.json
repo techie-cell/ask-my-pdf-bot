@@ -1,0 +1,38 @@
+{
+  "description": "Sample test queries for Ask My PDF Bot",
+  "instructions": "Upload the sample PDFs in the data/ folder, then try these questions",
+  "test_queries": [
+    {
+      "category": "General Understanding",
+      "questions": [
+        "What is the main topic of this document?",
+        "Can you summarize what this document is about?",
+        "What are the key points covered in this document?"
+      ]
+    },
+    {
+      "category": "Specific Facts",
+      "questions": [
+        "What date is mentioned in the document?",
+        "Who are the parties involved?",
+        "What are the terms and conditions mentioned?"
+      ]
+    },
+    {
+      "category": "Hallucination Prevention (should return 'not found' response)",
+      "questions": [
+        "What is the population of Mars?",
+        "Who won the 2050 World Cup?",
+        "What is the recipe for chocolate cake?"
+      ]
+    },
+    {
+      "category": "Follow-up Questions (conversational memory)",
+      "conversation": [
+        {"turn": 1, "question": "What is mentioned about pricing?"},
+        {"turn": 2, "question": "Can you elaborate on that?"},
+        {"turn": 3, "question": "Are there any exceptions to this?"}
+      ]
+    }
+  ]
+}
