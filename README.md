@@ -237,13 +237,3 @@ venv\Scripts\activate
 MIT License — Free to use and modify.
 
 ---
-
-## 🙌 Credits
-
-Built with:
-- [FastAPI](https://fastapi.tiangolo.com/)
-- [Streamlit](https://streamlit.io/)
-- [sentence-transformers](https://www.sbert.net/)
-- [FAISS](https://github.com/facebookresearch/faiss)
-- [PyMuPDF](https://pymupdf.readthedocs.io/)
-- [Google Gemini](https://ai.google.dev/)
