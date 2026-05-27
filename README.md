@@ -16,7 +16,6 @@ Upload PDF files → Ask questions → Get accurate, cited answers powered by AI
 | 💬 Conversation Memory | Follow-up questions understand context |
 | 🛡️ Hallucination Guard | Refuses to answer if info not in documents |
 | 💾 Persistent Index | FAISS index saved to disk between sessions |
-| 🖥️ Windows 10 Ready | `.bat` scripts, CPU-only, no GPU needed |
 
 ---
 
