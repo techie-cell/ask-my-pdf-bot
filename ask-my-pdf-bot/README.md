@@ -1,7 +1,6 @@
 # 📄 Ask My PDF Bot
 
-> A lightweight, production-ready RAG-based PDF chatbot — optimized for **Windows 10** with **8GB RAM** and **no GPU**.
-
+> A lightweight, production-ready RAG-based PDF chatbot 
 Upload PDF files → Ask questions → Get accurate, cited answers powered by AI.
 
 ---
