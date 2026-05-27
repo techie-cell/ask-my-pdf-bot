@@ -1,6 +1,6 @@
 # 📄 Ask My PDF Bot
 
-> A lightweight, production-ready RAG-based PDF chatbot 
+> A lightweight, RAG-based PDF chatbot 
 Upload PDF files → Ask questions → Get accurate, cited answers powered by AI.
 
 ---
